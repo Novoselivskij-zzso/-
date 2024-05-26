@@ -1,0 +1,301 @@
+<html lang="ua">
+    <head>
+        <title>Адміністрація</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="КУ Новоселівський ЗЗСО І-ІІІ ступенів, Новоселівська школа, Новоселівка, Новоселівський ЗЗСО">
+        <meta name="description" content="Цей сайт про Новоселівський ЗЗСО">
+        <link rel="shortcut icon" href="C:\Users\Administrator\Desktop\САЙТ\Home\school.jpg">
+    </head>
+    <body   style="background: linear-gradient(to bottom right, #3200f996, #fbff00)" bgproperties="fixed">
+      <h1 align="center">	Комунальна установа "Новоселівський заклад загальної середньої освіти І - ІІІ ступенів" Федорівської сільської ради Пологівського району Запорізької області</h1>  
+      <table bgcolor="#FFFFF0" border="0" align="center" width="90%">
+       <tr> <td width="15%"><img src='C:\Users\Administrator\Desktop\САЙТ\Home\school.jpg' width="100%" height="100%"> </td>
+        <td  width="60%" style="background: linear-gradient(to bottom, #0c00f9, #eef601)"><p align="center"><font size='30px' color="#eef601" face="segoe script"> Адміністрація</font></p></td>
+         <td><table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+          <tbody>
+          <tr> <style>
+            body {
+              font-family: Arial, sans-serif;
+              text-align: center;
+              margin-top: 50px;
+            }
+         
+            .calMdayA {
+              background-color: rgb(255, 157, 0);
+            }
+            .today {
+      background-color: rgb(244, 201, 12);
+          </style>
+          <td style="background: #eaeac0; color:#000000;" align="center"><b><!-- <bt> --><!--<s5171>-->Календар<!--</s>--><!-- </bt> --></b><br></td></tr>
+          <tr><td style="background: #eaeac0;">
+            <div align="center"> <!-- <bc> -->
+              <div id="calendar-container">
+    <div id="month-name" class="month-name"></div>
+    <table id="calendar"  width="80%">
+      <thead>
+        <tr>
+          <th>Пн</th>
+          <th>Вт</th>
+          <th>Ср</th>
+          <th>Чт</th>
+          <th>Пт</th>
+          <th>Сб</th>
+          <th>Нд</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Дні будуть згенеровані JavaScript -->
+      </tbody>
+    </table>
+  </div>
+            
+              <script>
+    function generateCalendar(year, month) {
+      const calendar = document.querySelector("#calendar tbody");
+      const monthNameElement = document.querySelector("#month-name");
+      const today = new Date();
+      const currentMonth = new Date(year, month);
+      const firstDayIndex = currentMonth.getDay() === 0 ? 6 : currentMonth.getDay() - 1;
+      const lastDate = new Date(year, month + 1, 0).getDate();
+      const monthNames = ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+
+      monthNameElement.textContent = `${monthNames[month]} ${year}`;
+
+      let date = 1;
+      calendar.innerHTML = "";
+
+      for (let i = 0; i < 6; i++) {
+        const row = document.createElement("tr");
+
+        for (let j = 0; j < 7; j++) {
+          const cell = document.createElement("td");
+
+          if (i === 0 && j < firstDayIndex) {
+            cell.textContent = "";
+          } else if (date > lastDate) {
+            cell.textContent = "";
+          } else {
+            cell.textContent = date;
+
+            if (
+              date === today.getDate() &&
+              month === today.getMonth() &&
+              year === today.getFullYear()
+            ) {
+              cell.classList.add("today");
+            }
+
+            date++;
+          }
+
+          row.appendChild(cell);
+        }
+
+        calendar.appendChild(row);
+
+        if (date > lastDate) {
+          break;
+        }
+      }
+    }
+
+    const today = new Date();
+    generateCalendar(today.getFullYear(), today.getMonth());
+  </script>
+          </tbody>
+           </div></td></tr>
+          </tbody>
+          </table></td>
+       </tr>
+       <tr>
+        <td width="20%" style="vertical-align: top"><table bgcolor="#FFFACD" align="center" border="1" cellpadding="0" cellspacing="0" width="100%" height="100%">
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/index.html"> Головна </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Selo/selo.html"> Про село</a> </font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Shkola/shkola.html"> Про школу </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Administratsiya/administratsiya.html"> Адміністрація </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Bratstvo/bratstvo.html"> Шкільне братство </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Magistrat/magistrat.html"> Магістрат </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Rozklad/rozklad.html"> Розклад </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Rejum%20robotu/rejum.html"> Режим роботи </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Dokymentu/dokymentu.html"> Установчі документи </a></font></td></tr>
+          <tr> <td align="center"><font size='5px' face="comic sans ms"><a href="C:/Users/Administrator/Desktop/%D0%A1%D0%90%D0%99%D0%A2/Psuholog/psuholog.html"> Сторінка психолога </a></font></td></tr></table>
+         </td>
+         <td style="vertical-align: top"> <table border="0" width="100%" height="100%">
+          <style>
+                bod
+            
+              
+            
+                body {
+                  font-family: Arial, sans-serif;
+                  text-align: center;
+                  margin: 0;
+                  padding: 20px;
+                  background-color: #f4f4f4;
+                }
+            
+                img {
+                  max-width: 100%;
+                  height: auto;
+                  cursor: pointer;
+                  transition: transform 0.2s;
+                }
+            
+                .modal {
+                  display: none; /* Приховано за замовчуванням */
+                  position: fixed;
+                  z-index: 1;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  overflow: auto;
+                  background-color: rgba(0, 0, 0, 0.8); /* Темне фонове покриття */
+                }
+            
+                .modal-content {
+                  margin: auto;
+                  display: block;
+                  width: 80%;
+                  max-width: 700px;
+                }
+            
+                .close {
+                  position: absolute;
+                  top: 15px;
+                  right: 35px;
+                  color: #fff;
+                  font-size: 40px;
+                  font-weight: bold;
+                  transition: 0.3s;
+                  cursor: pointer;
+                }
+            
+                .close:hover,
+                .close:focus {
+                  color: #bbb;
+                  text-decoration: none;
+                }
+            
+                .modal-content, .close {
+                  animation-name: zoom;
+                  animation-duration: 0.6s;
+                }
+            
+                @keyframes zoom {
+                  from {transform: scale(0)}
+                  to {transform: scale(1)}
+                }
+              </style>
+              <tr><td height="30%" align="center" style="vertical-align: top"><h3><b>Пономаренко Ольга <br>Миколаївна</b></h3>
+                <p><!-- Маленьке зображення -->
+                      <img id="myImg.Ponomarenko" src="C:\Users\Administrator\Desktop\САЙТ\Administratsiya\Ponomarenko.jpg" alt="Ponomarenko" style="width:100px;">
+                      
+                      <!-- Модальне вікно -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                      </div>
+                      
+                      <script>
+                        // Отримуємо елементи
+                        var modal = document.getElementById("myModal");
+                        var img = document.getElementById("myImg.Ponomarenko");
+                        var modalImg = document.getElementById("img01");
+                        var closeSpan = document.getElementsByClassName("close")[0];
+                      
+                        // Коли користувач натискає на зображення, відкрити модальне вікно
+                        img.onclick = function() {
+                          modal.style.display = "block";
+                          modalImg.src = this.src;
+                        }
+                      
+                        // Коли користувач натискає на <span> (x), закрити модальне вікно
+                        closeSpan.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                      
+                        // Коли користувач натискає будь-де за межами модального вікна, закрити його
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                      </script></td>
+                <td height="30%" align="center" style="vertical-align: top"><h3><b>Грицюк Наталія  <br>Дементіївна</b></h3>
+                  <p><!-- Маленьке зображення -->
+                    <img id="myImg.Grutsyuk" src="C:\Users\Administrator\Desktop\САЙТ\Administratsiya\Grutsyuk.jpg" alt="Grutsyuk" style="width:100px;">
+                    
+                    <!-- Модальне вікно -->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                    </div>
+                    
+                    <script>
+                      // Отримуємо елементи
+                      var modal = document.getElementById("myModal");
+                      var img = document.getElementById("myImg.Grutsyuk");
+                      var modalImg = document.getElementById("img01");
+                      var closeSpan = document.getElementsByClassName("close")[0];
+                    
+                      // Коли користувач натискає на зображення, відкрити модальне вікно
+                      img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                      }
+                    
+                      // Коли користувач натискає на <span> (x), закрити модальне вікно
+                      closeSpan.onclick = function() {
+                        modal.style.display = "none";
+                      }
+                    
+                      // Коли користувач натискає будь-де за межами модального вікна, закрити його
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+                    </script></td>
+                <td height="30%" align="center" style="vertical-align: top"><h3><b>Рибалко Оленв  <br>Володимирівна</b></h3>
+                  <p><!-- Маленьке зображення -->
+                    <img id="myImg.Rubalko" src="C:\Users\Administrator\Desktop\САЙТ\Administratsiya\Rubalko.jpg" alt="Rubalko" style="width:100px;">
+                    
+                    <!-- Модальне вікно -->
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                    </div>
+                    
+                    <script>
+                      // Отримуємо елементи
+                      var modal = document.getElementById("myModal");
+                      var img = document.getElementById("myImg.Rubalko");
+                      var modalImg = document.getElementById("img01");
+                      var closeSpan = document.getElementsByClassName("close")[0];
+                    
+                      // Коли користувач натискає на зображення, відкрити модальне вікно
+                      img.onclick = function() {
+                        modal.style.display = "block";
+                        modalImg.src = this.src;
+                      }
+                    
+                      // Коли користувач натискає на <span> (x), закрити модальне вікно
+                      closeSpan.onclick = function() {
+                        modal.style.display = "none";
+                      }
+                    
+                      // Коли користувач натискає будь-де за межами модального вікна, закрити його
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          modal.style.display = "none";
+                        }
+                      }
+                    </script></td></tr>
+              </table> </td>
+         <td align="center"> <a href="https://www.facebook.com/groups/860777744722617" target="_blank"><img src='C:\Users\Administrator\Desktop\САЙТ\Home\Facebook.jpg' width="50%" height="10%"></a>
+          <a href="http://www.youtube.com/@user-wi9wf7is3q" target="_blank"><img src='C:\Users\Administrator\Desktop\САЙТ\Home\YouTube_2.jpg' width="50%" height="10%"></a></td>
+        <tr ><td colspan="3" align="center" bgcolor="#FFFACD">® КУ "Новоселівський ЗЗСО І-ІІІ ступенів" 2023-2024</td></tr>
+      </table>
+    </body>
+</html>
